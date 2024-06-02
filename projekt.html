@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="icon" href="https://i.pinimg.com/736x/c6/6b/4d/c66b4d90eb2fe14d823689338274fe1c.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Expo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://i.pinimg.com/736x/c6/6b/4d/c66b4d90eb2fe14d823689338274fe1c.jpg" alt="Pet Expo Logo" id="logo">
+        <h1>Pet Expo</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadAnimals('cats')">Cats</a></li>
+                <li><a href="#" onclick="loadAnimals('dogs')">Dogs</a></li>
+                <li><a href="#" onclick="loadAnimals('birds')">Birds</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="gallery">
+            <h2>Animal Gallery</h2>
+            <input type="text" id="searchBar" placeholder="Search for an animal..." onkeyup="searchAnimals()">
+            <div id="animal-cards" class="card-container"></div>
+        </section>
+
+
+        <section id="event-schedule">
+            <h2>Event Schedule</h2>
+            <div id="schedule-container">
+            </div>
+        </section>
+        
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="review-container">
+                <div class="review">
+                    <p>Great event! My pets loved it.</p>
+                    <p>- John Doe</p>
+                </div>
+                <div class="review">
+                    <p>Amazing experience. Would highly recommend.</p>
+                    <p>- Jane Smith</p>
+                </div>
+                <div class="review">
+                    <p>Wonderful exhibition. Learned a lot about pet care.</p>
+                    <p>- Sarah Johnson</p>
+                </div>
+                <div class="review">
+                    <p>Fantastic variety of animals. My kids had a blast!</p>
+                    <p>- Michael Brown</p>
+                </div>
+                <div class="review">
+                    <p>Excellent organization. Will definitely come again next year.</p>
+                    <p>- Emily Wilson</p>
+                </div>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>Welcome to Pet Expo Albania, the largest event dedicated to pet enthusiasts! Here, you'll find everything you need for the care, feeding, and well-being of your beloved pets. From exhibitions showcasing the newest and best products to educational seminars and training demonstrations, Pet Expo Albania is the ideal place to learn and exchange experiences with experts and fellow enthusiasts. Join us for a day filled with entertainment, valuable insights, and plenty of other surprises!</p>
+        </section>
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <p>Email: petexpoalbania@gmail.com</p>
+            <p>Phone: 069 447 7535</p>
+        </section>
+    </footer>
+    <div id="animal-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
